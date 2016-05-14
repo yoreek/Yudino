@@ -46,7 +46,7 @@ env:
 # - BOARD=arduino:avr:yun
 # - BOARD=arduino:avr:diecimila:cpu=atmega168
 # - BOARD=arduino:avr:diecimila:cpu=atmega328
- - BOARD=arduino:avr:nano:cpu=atmega168
+# - BOARD=arduino:avr:nano:cpu=atmega168
  - BOARD=arduino:avr:nano:cpu=atmega328
  - BOARD=arduino:avr:mega:cpu=atmega1280
  - BOARD=arduino:avr:mega:cpu=atmega2560
