@@ -4,7 +4,7 @@
 #  include "WProgram.h"
 #endif
 #include <DebugUtil.h>
-#include <Relay/Relay.h>
+#include <Yudino.h>
 
 #define RELAY_PIN      7
 #define RELAY_INVERTED false

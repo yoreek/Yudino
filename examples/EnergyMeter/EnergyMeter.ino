@@ -4,7 +4,7 @@
 #  include "WProgram.h"
 #endif
 #include <DebugUtil.h>
-#include <Meter/EnergyMeter.h>
+#include <Yudino.h>
 
 #define POWER 100 // Watts
 

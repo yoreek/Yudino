@@ -6,7 +6,7 @@
 #include <SPI.h>
 #include <SdFat.h>
 #include <DebugUtil.h>
-#include <Logger/DataLogger.h>
+#include <Yudino.h>
 
 #define ETHERNET_SHIELD_SDCARD_PIN 4
 #define ETHERNET_SHIELD_W5100_PIN  10

@@ -4,12 +4,7 @@
 #  include "WProgram.h"
 #endif
 #include <DebugUtil.h>
-#include <Relay/Relay.h>
-#include <Heater/Heater.h>
-#include <Heater/RegulatedHeater.h>
-#include <Heater/ScheduledHeater.h>
-#include <Heater/UnderfloorHeater.h>
-#include <Sensor/Temperature/Thermistor.h>
+#include <Yudino.h>
 
 #define RELAY_PIN          7
 #define THERMISTOR_PIN     0

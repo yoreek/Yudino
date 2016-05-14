@@ -7,7 +7,7 @@
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 #include <DebugUtil.h>
-#include <Network/NtpClient.h>
+#include <Yudino.h>
 
 #define ETHERNET_SHIELD_SDCARD_PIN 4
 #define ETHERNET_SHIELD_W5100_PIN  10

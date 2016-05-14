@@ -4,7 +4,7 @@
 #  include "WProgram.h"
 #endif
 #include <DebugUtil.h>
-#include <Maintain/Maintain.h>
+#include <Yudino.h>
 
 #define MAINTAIN_INTERVAL 60 // seconds
 
