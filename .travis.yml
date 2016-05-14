@@ -23,7 +23,7 @@ before_install:
   - wget https://github.com/greiman/SdFat/archive/master.zip
   - unzip master.zip
   - rm master.zip
-  - sudo mv SdFat-master /usr/local/share/arduino/libraries/SdFat
+  - sudo mv SdFat-master/SdFat /usr/local/share/arduino/libraries/SdFat
 
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/Yudino
