@@ -5,9 +5,23 @@
 #endif
 #include "Maintain.h"
 
-void MaintainedCollection::add(MaintainedObject *obj) {
+void MaintainedCollectionSimple::add(MaintainedObject *obj) {
     obj->next = _objects;
     _objects  = obj;
+}
+
+MaintainedObject *MaintainedCollectionSimple::get(int n) {
+    MaintainedObject *obj;
+    int               i;
+
+    obj = _objects;
+    i   = 0;
+    while (obj != NULL && i != n) {
+        obj = obj->next;
+        i++;
+    }
+
+    return obj;
 }
 
 void MaintainedCollection::forceMaintain() {
@@ -37,18 +51,4 @@ void MaintainedCollection::maintain(bool force) {
         obj->maintain();
         obj = obj->next;
     }
-}
-
-MaintainedObject *MaintainedCollection::get(int n) {
-    MaintainedObject *obj;
-    int               i;
-
-    obj = _objects;
-    i   = 0;
-    while (obj != NULL && i != n) {
-        obj = obj->next;
-        i++;
-    }
-
-    return obj;
 }

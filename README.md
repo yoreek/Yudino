@@ -1,7 +1,7 @@
 # Yudino arduino library [![Build Status](https://travis-ci.org/yoreek/Yudino.svg?branch=master)](https://travis-ci.org/yoreek/Yudino)
 
-* Version: 1.0.0
-* Release Date: 2016-05-14
+* Version: 1.0.2
+* Release Date: 2016-05-20
 
 ## How do I get set up? ##
 
@@ -21,6 +21,7 @@ Included on example folder, available on Arduino IDE.
 
 ## Version History ##
 
+ * 1.0.2 (2016-05-20): Fixed bug on Relay module.
  * 1.0.0 (2016-05-14): Initial version.
 
 

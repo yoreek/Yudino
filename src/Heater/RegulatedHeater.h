@@ -22,6 +22,7 @@ class RegulatedHeater: public Heater, public MaintainedObject {
             TemperatureSensorCached *temperatureSensor
         ) :
             Heater(name, relay),
+            MaintainedObject(),
             _temperatureSensor(temperatureSensor),
             _targetTemperature(_DEF_TEMP),
             _hysteresis(_DEF_HYSTERESIS),

@@ -19,6 +19,7 @@ class Relay {
             _turnedOn(false)
         {
             pinMode(_pin, OUTPUT);
+            turnOff();
         };
         virtual void turnOn();
         virtual void turnOff();

@@ -17,26 +17,36 @@ class MaintainedObject {
         MaintainedObject *next;
 };
 
-class MaintainedCollection {
+class MaintainedCollectionSimple {
     public:
-        MaintainedCollection(uint32_t maintainInterval) :
-            _objects(NULL),
-            _maintainInterval(maintainInterval),
-            _timeLastMaintain(0)
+        MaintainedCollectionSimple(void) :
+            _objects(NULL)
         {};
         void add(MaintainedObject *obj);
-        void maintain();
-        void forceMaintain();
-        void maintain(bool force);
+        virtual void maintain() {};
         MaintainedObject *first(void) {
             return _objects;
         };
         MaintainedObject *get(int n);
 
-    private:
+    protected:
         MaintainedObject *_objects;
-        uint32_t          _maintainInterval;
-        uint32_t          _timeLastMaintain;
+};
+
+class MaintainedCollection: public MaintainedCollectionSimple {
+    public:
+        MaintainedCollection(uint32_t maintainInterval) :
+            MaintainedCollectionSimple(),
+            _maintainInterval(maintainInterval),
+            _timeLastMaintain(0)
+        {};
+        virtual void maintain();
+        virtual void forceMaintain();
+        virtual void maintain(bool force);
+
+    protected:
+        uint32_t _maintainInterval;
+        uint32_t _timeLastMaintain;
 };
 
 #endif
