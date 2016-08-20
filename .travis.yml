@@ -35,6 +35,7 @@ script:
   - arduino --verify --board ${BOARD} $PWD/examples/Maintain/Maintain.ino
   - arduino --verify --board ${BOARD} $PWD/examples/NtpClient/NtpClient.ino
   - arduino --verify --board ${BOARD} $PWD/examples/Relay/Relay.ino
+  - arduino --verify --board ${BOARD} $PWD/examples/Battery/Battery.ino
 
 notifications:
   email:
