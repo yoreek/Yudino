@@ -9,7 +9,7 @@
 #endif
 #include <inttypes.h>
 #include <Wire.h>
-#include "CachedMeasure.h"
+#include <Sensor/CachedMeasure.h>
 #include "TemperatureSensor.h"
 #include "HumiditySensor.h"
 

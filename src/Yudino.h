@@ -11,10 +11,12 @@
 #include "Maintain/Maintain.h"
 #include "Meter/EnergyMeter.h"
 #include "Network/NtpClient.h"
-#include "Sensor/Temperature/CachedMeasure.h"
+#include "Sensor/CachedMeasure.h"
 #include "Sensor/Temperature/TemperatureSensor.h"
 #include "Sensor/Temperature/HumiditySensor.h"
 #include "Sensor/Temperature/Thermistor.h"
 #include "Sensor/Temperature/HTU21DF.h"
+#include "Sensor/Power/VoltageSensor.h"
+#include "Power/Battery.h"
 
 #endif

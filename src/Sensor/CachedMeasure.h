@@ -30,8 +30,8 @@ class CachedMeasure {
 
     private:
         uint8_t  _measureSamples;
-        uint16_t _expireTime;
-        uint16_t _timeNextUpdate;
+        uint32_t _expireTime;
+        uint32_t _timeNextUpdate;
         float    _value;
 };
 

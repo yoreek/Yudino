@@ -8,7 +8,7 @@
 #include "WProgram.h"
 #endif
 #include <inttypes.h>
-#include "CachedMeasure.h"
+#include <Sensor/CachedMeasure.h>
 
 class TemperatureSensor {
     public:
