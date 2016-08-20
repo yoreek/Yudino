@@ -16,6 +16,7 @@
 #include "Sensor/Temperature/HumiditySensor.h"
 #include "Sensor/Temperature/Thermistor.h"
 #include "Sensor/Temperature/HTU21DF.h"
+#include "Sensor/AnalogThresholdSensor.h"
 #include "Sensor/Power/VoltageSensor.h"
 #include "Power/Battery.h"
 

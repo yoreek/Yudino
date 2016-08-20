@@ -1,5 +1,6 @@
 #pragma once
 #ifndef _BATTERY_H_
+#define _BATTERY_H_
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #  include "Arduino.h"
@@ -19,6 +20,9 @@ class Battery {
         void begin(void);
         inline float voltage(void) {
             return _sensor->voltage();
+        };
+        inline bool update(bool forceUpdate = false) {
+            return _sensor->update(forceUpdate);
         };
         float level(void);
 

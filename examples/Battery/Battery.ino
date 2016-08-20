@@ -24,7 +24,9 @@ void setup() {
 }
 
 void loop() {
-    DEBUG("Battery Voltage: %.6f V, level: %.1f %%", bat.voltage(), bat.level());
+    if (bat.update()) {
+        DEBUG("Battery Voltage: %.6f V, level: %.1f %%", bat.voltage(), bat.level());
+    }
 
     delay(1000);
 }

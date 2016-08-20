@@ -1,5 +1,6 @@
 #pragma once
 #ifndef _VOLTAGE_SENSOR_H_
+#define _VOLTAGE_SENSOR_H_
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #  include "Arduino.h"

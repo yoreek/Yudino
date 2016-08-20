@@ -23,6 +23,7 @@ Included on example folder, available on Arduino IDE.
 
  * 1.0.3 (2016-08-20): Modified CachedMeasure class
                        Added VoltageSensor
+                       Added AnalogThresholdSensor
  * 1.0.2 (2016-05-20): Fixed bug on Relay module.
  * 1.0.0 (2016-05-14): Initial version.
 
