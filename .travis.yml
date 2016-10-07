@@ -24,18 +24,24 @@ before_install:
   - unzip master.zip
   - rm master.zip
   - sudo mv SdFat-master/SdFat /usr/local/share/arduino/libraries/SdFat
+  - wget https://github.com/yoreek/Arduino-StateMachine/archive/master.zip
+  - unzip master.zip
+  - rm master.zip
+  - sudo mv Arduino-StateMachine-master /usr/local/share/arduino/libraries/StateMachine
 
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/Yudino
 
 script:
+  - arduino --verify --board ${BOARD} $PWD/examples/Battery/Battery.ino
   - arduino --verify --board ${BOARD} $PWD/examples/DataLogger/DataLogger.ino
+  - arduino --verify --board ${BOARD} $PWD/examples/Encoder/Encoder.ino
   - arduino --verify --board ${BOARD} $PWD/examples/EnergyMeter/EnergyMeter.ino
   - arduino --verify --board ${BOARD} $PWD/examples/Heater/Heater.ino
   - arduino --verify --board ${BOARD} $PWD/examples/Maintain/Maintain.ino
   - arduino --verify --board ${BOARD} $PWD/examples/NtpClient/NtpClient.ino
+  - arduino --verify --board ${BOARD} $PWD/examples/PushButton/PushButton.ino
   - arduino --verify --board ${BOARD} $PWD/examples/Relay/Relay.ino
-  - arduino --verify --board ${BOARD} $PWD/examples/Battery/Battery.ino
 
 notifications:
   email:

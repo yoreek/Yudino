@@ -1,7 +1,7 @@
 # Yudino arduino library [![Build Status](https://travis-ci.org/yoreek/Yudino.svg?branch=master)](https://travis-ci.org/yoreek/Yudino)
 
-* Version: 1.0.3
-* Release Date: 2016-08-20
+* Version: 1.0.4
+* Release Date: 2016-10-07
 
 ## How do I get set up? ##
 
@@ -9,6 +9,7 @@
  * Download and Install [SdFat](https://github.com/greiman/SdFat) library.
  * Download and Install [DebugUtil](https://github.com/yoreek/Arduino-DebugUtil) library.
  * Download and Install [StringUtil](https://github.com/yoreek/Arduino-StringUtil) library.
+ * Download and Install [StateMachine](https://github.com/yoreek/Arduino-StateMachine) library.
  * [Download](https://github.com/yoreek/Yudino/archive/master.zip) the Latest release from gitHub.
  * Unzip and modify the Folder name to "Yudino".
  * Paste the modified folder on your library folder (On your `Libraries` folder inside Sketchbooks or Arduino software).
@@ -21,6 +22,8 @@ Included on example folder, available on Arduino IDE.
 
 ## Version History ##
 
+ * 1.0.4 (2016-10-07): Added RotaryEncoder
+                       Added PushButton
  * 1.0.3 (2016-08-20): Modified CachedMeasure class
                        Added VoltageSensor
                        Added AnalogThresholdSensor

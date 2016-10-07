@@ -26,7 +26,7 @@ ARDUINO_LIBS = DebugUtil                                                \
                SdFat                                                    \
                Ethernet                                                 \
                Yudino                                                   \
-               Low-Power
+               StateMachine
 
 CXXFLAGS = -std=c++11 -std=c++1y                                        \
            -fno-move-loop-invariants -Wall -Werror                      \

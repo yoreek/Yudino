@@ -23,6 +23,7 @@ ARDUINO_LIBS = DebugUtil                                                \
                Wire                                                     \
                SdFat                                                    \
                Ethernet                                                 \
+               StateMachine                                             \
                Yudino
 
 # -fno-move-loop-invariants - fix bug with segfault during compilation

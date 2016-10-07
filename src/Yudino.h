@@ -2,6 +2,7 @@
 #ifndef _YUDINO_H_
 #define _YUDINO_H_
 
+#include "Core/Pin.h"
 #include "Relay/Relay.h"
 #include "Heater/Heater.h"
 #include "Heater/RegulatedHeater.h"
@@ -18,6 +19,9 @@
 #include "Sensor/Temperature/HTU21DF.h"
 #include "Sensor/AnalogThresholdSensor.h"
 #include "Sensor/Power/VoltageSensor.h"
+#include "Sensor/Encoder/Encoder.h"
+#include "Sensor/Encoder/RotaryEncoder.h"
+#include "Sensor/PushButton.h"
 #include "Power/Battery.h"
 
 #endif
